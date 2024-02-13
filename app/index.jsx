@@ -6,12 +6,11 @@ import { LinearGradient } from 'expo-linear-gradient';
 import Animated, { FadeIn, FadeOut, FadeInDown } from 'react-native-reanimated';
 import { useNavigation, useRouter } from 'expo-router'
 
-
 export default function Index() {
     const router = useRouter();
     const navigation = useNavigation();
     useEffect(() => {
-        setTimeout(() => navigation.navigate('home'), 3000)
+        setTimeout(() => navigation.navigate('login'), 3000)
     })
     return (
         <View className="flex-1 flex justify-end">
@@ -37,8 +36,6 @@ export default function Index() {
                         <Text style={{ fontSize: hp(4), color: 'red' }}> Y</Text>our
                         <Text style={{ fontSize: hp(4), color: 'red' }}> L</Text>imits.
                     </Text>
-
-
 
                 </Animated.View>
 
